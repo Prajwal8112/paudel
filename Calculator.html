@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .out{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            background-color: blue;
+            height: 80vh;
+            width: 25vw;
+            border-radius: 10px;
+        }
+        .in{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 30px;
+        }
+        #div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10,#div11,#div12,#div13,#div14,#div15,#div16,#div17,#div18,#div19,#div20{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            font-size: 22px;
+            color: black;
+        }
+        .div2,.div3,.div4,.div5,.div6{
+            display: flex;
+            gap: 15px;
+        }
+        .div1{
+            background-color: white;
+            height: 60px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        #div1,#div2,#div3,#div4,#div8,#div12,#div16,#div20{
+            background-color: orangered;
+            color: white;
+        }
+        #div3,#div4,#div8,#div12,#div16,#div20{
+            font-size: 42px;
+            font-family: cute font;
+        }
+        #div5,#div6,#div7,#div9,#div10,#div11,#div13,#div14,#div15,#div17,#div18,#div19{
+            font-size: 28px;
+            font-family: roboto;
+        }
+        #display{
+            height: 40px;
+            width: 220px;
+        }
+    </style>
+</head>
+<body style="display: flex;justify-content: space-around;align-items: center;align-content: center;">
+    <div class="out">
+        <div class="in">
+                     <input type="text"  id="display" placeholder="0">
+               
+               <div class="div2">
+                    <div id="div1">AC</div>
+                    <div id="div2">DEL</div>
+                    <div id="div3">%</div>
+                    <div id="div4">/</div>
+               </div>
+               <div class="div3">
+                     <div id="div5">7</div>
+                     <div id="div6">8</div>
+                     <div id="div7">9</div>
+                     <div id="div8">*</div>
+               </div>
+               <div class="div4">
+                  <div id="div9">4</div>
+                  <div id="div10">5</div>
+                  <div id="div11">6</div>
+                  <div id="div12">-</div>
+               </div>
+               <div class="div5">
+                 <div id="div13" onclick="aa('1')">1</div>
+                 <div id="div14" onclick="aa('2')">2</div>
+                 <div id="div15">3</div>
+                 <div id="div16">+</div>
+               </div>
+               <div class="div6">
+                 <div id="div17">00</div>
+                 <div id="div18">0</div>
+                 <div id="div19">.</div>
+                 <div id="div20">=</div>
+               </div>
+        </div>
+    </div>
+    <script>
+        var dis = document.getElementById("display");
+        function aa(a){
+            
+            dis.value += a;
+        }
+    </script>
+</body>
+</html>
